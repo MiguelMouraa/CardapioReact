@@ -6,7 +6,7 @@ export default function Home() {
   const menuItems = [
     {
       name: 'Bolo de cenoura com chocolate',
-      description: 'Bolo de 950g',
+      description: 'Bolo com cobertura',
       price: 'R$ 34,00',
       image: '/bolocenoura.jpg' 
     },

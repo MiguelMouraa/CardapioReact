@@ -15,7 +15,7 @@ header {
 
 .maintext {
   text-align: center;
-  padding-left: 520px;
+  flex: 1;
 }
 
 /* Estilos para os links */
