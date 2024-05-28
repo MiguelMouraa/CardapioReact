@@ -1,17 +1,16 @@
-
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../src/app/Header';
 
+// Define the Contact page component
 const Contact = () => {
   return (
     <div>
       <Header />
-      <div className="container mx-auto">
-        <h1 className="text-3xl mt-8">Entre em contato</h1>
-        <p className="text-lg mt-4">Entre em contato conosco para mais informações.</p>
-      </div>
+      <h1>Contact Page</h1>
+      <p>This is the contact page.</p>
     </div>
   );
 };
 
+// Export the Contact page component as the default export
 export default Contact;
