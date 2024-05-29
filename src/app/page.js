@@ -1,62 +1,61 @@
-import Header from '../app/Header';
-import MenuItem from '../app/Menuitem';
-import '../app/globals.css'
+"use client";
 
-export default function Home() {
-  const menuItems = [
+import React, { useState } from 'react';
+import Header from './Header';
+import MenuItem from './Menuitem';
+import AddMenuItemForm from './AddMenuItemForm';
+import './globals.css';
+
+export default function HomePage() {
+  const [menuItems, setMenuItems] = useState([
     {
       name: 'Bolo de cenoura com chocolate',
       description: 'Bolo com cobertura',
       price: 'R$ 34,00',
-      image: '/bolocenoura.jpg' 
+      image: '/bolocenoura.jpg'
     },
-
     {
       name: 'Bolo de banana',
       description: 'Bolo com cobertura',
       price: 'R$ 34,00',
-      image: '/bolobanana.jpg' 
+      image: '/bolobanana.jpg'
     },
-
     {
       name: 'Bolo de Chocolate',
       description: 'Bolo com cobertura',
       price: 'R$ 36,00',
       image: '/bolochocolate.jpg'
     },
-  
     {
       name: 'Bolo de Churros',
       description: 'Bolo com cobertura',
       price: 'R$ 34,00',
-      image: '/bolochurros.jpg' 
+      image: '/bolochurros.jpg'
     },
     {
       name: 'Bolo de Ninho',
       description: 'Bolo com cobertura',
       price: 'R$ 34,00',
-      image: '/boloninho.jpg' 
+      image: '/boloninho.jpg'
     },
     {
       name: 'Bolo de Vulcão',
       description: 'Bolo com cobertura',
       price: 'R$ 40,00',
-      image: '/bolovulcao.jpg' 
+      image: '/bolovulcao.jpg'
     },
-
     {
       name: 'Bolo de Piscina',
       description: 'Bolo com cobertura',
       price: 'R$ 47,00',
-      image: '/bolopiscina.jpg' 
+      image: '/bolopiscina.jpg'
     },
     {
       name: 'Bolo de Laranja',
       description: 'Bolo de 150g',
       price: 'R$ 32,00',
-      image: '/bololaranja.jpg' 
+      image: '/bololaranja.jpg'
     },
-    
     {
       name: 'Bolo de Maçã',
       description: 'Bolo sem cobertura',
@@ -93,9 +92,16 @@ export default function Home() {
       price: 'R$ 30,00',
       image: '/bolofubagoiaba.jpg'
     }
-    
-  ];
-  
+  ]);
+
+  const handleAddItem = (newItem) => {
+    setMenuItems([...menuItems, newItem]);
+  };
+
+  const handleDeleteItem = (index) => {
+    const updatedMenuItems = menuItems.filter((_, i) => i !== index);
+    setMenuItems(updatedMenuItems);
+  };
 
   return (
     <>
@@ -104,16 +110,18 @@ export default function Home() {
         <div className="max-w-5xl w-full text-center">
           <h2 className="text-2xl font-bold mb-8">Nosso Cardápio</h2>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {menuItems.map((item, index) => (
+            {menuItems.map((item, index) => (
               <MenuItem
                 key={index}
                 name={item.name}
                 description={item.description}
                 price={item.price}
-                image={item.image} 
+                image={item.image}
+                onDelete={() => handleDeleteItem(index)}
               />
             ))}
           </div>
+          <AddMenuItemForm onAdd={handleAddItem} />
         </div>
       </main>
     </>
