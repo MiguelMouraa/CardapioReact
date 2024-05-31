@@ -1,0 +1,150 @@
+/* globals.css */
+body {
+  background-color: #eae6a4;
+}
+
+header {
+  background-color: #e6d7a4; /* Cor de fundo do cabeçalho */
+  color: #000000; /* Cor do texto do cabeçalho */
+  padding: 20px; /* Espaçamento interno do cabeçalho */
+  text-align: center; /* Alinhamento do texto no centro */
+  border-radius: 10px;
+  display: flex; /* Alteração para flex */
+  justify-content: space-between; /* Alinha o conteúdo à esquerda e à direita */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+.maintext {
+  text-align: center;
+  flex: 1;
+}
+
+/* Estilos para os links */
+.header-links {
+  display: flex;
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilos para os links individuais */
+.header-link {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logoinsta {
+  background-image: url('/logoinsta.png');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Adiciona um espaço à direita da imagem */
+}
+
+.logowpp {
+  background-image: url('/logoinsta.png');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Adiciona um espaço à direita da imagem */
+}
+
+/* Estilos para o container do item */
+.menu-item-container {
+  display: flex;
+  align-items: center;
+  background-color: #eae6a4;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a imagem do item */
+.menu-item-image {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos para os detalhes do item */
+.menu-item-details {
+  flex: 1;
+}
+
+/* Estilos para o nome do item */
+.menu-item-name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Estilos para a descrição do item */
+.menu-item-description {
+  margin-bottom: 8px;
+}
+
+/* Estilos para o preço do item */
+.menu-item-price {
+  font-weight: bold;
+}
+
+/* Estilos para o botão de exclusão */
+.delete-button {
+  background-color: #e6d7a4; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+  padding: 10px 20px; /* Espaçamento interno */
+  border-radius: 50px; /* Borda arredondada */
+  transition: all 0.3s ease; /* Transição suave para hover e focus */
+}
+
+.delete-button:hover {
+  background-color: #e6d7a4; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Aumenta ligeiramente o botão ao passar o mouse */
+}
+
+.delete-button:focus {
+  outline: none; /* Remove a borda de foco padrão */
+  box-shadow: 0 0 10px rgba(255, 85, 85, 0.7); /* Adiciona uma sombra ao focar */
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column; /* Ajuste para empilhar os campos verticalmente */
+  align-items: left; /* Centraliza os campos horizontalmente */
+  gap: 10px; /* Espaçamento entre os campos */
+}
+
+.input-field {
+  padding: 12px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 5px; /* Borda arredondada */
+  transition: border-color 0.3s ease; /* Transição suave da cor da borda */
+  width: 100%; /* Define a largura total */
+  max-width: 300px; /* Define a largura máxima */
+}
+
+.add-button {
+  background-color: #6c63ff; /* Cor de fundo */
+  color: #ffffff; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+  padding: 12px 20px; /* Espaçamento interno */
+  margin-top: 15px; /* Espaçamento superior */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Cursor ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+  width: 100%; /* Define a largura total */
+  max-width: 300px; /* Define a largura máxima */
+}
+
+.add-button:hover {
+  background-color: #5246e2; /* Cor de fundo ao passar o mouse */
+}
