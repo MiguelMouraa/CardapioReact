@@ -12,13 +12,13 @@ export default function HomePage() {
     {
       name: 'Bolo de cenoura com chocolate',
       description: 'Bolo com cobertura',
-      price: 'R$ 34,00',
+      price: 'R$ 36,00',
       image: '/bolocenoura.jpg'
     },
     {
       name: 'Bolo de banana',
       description: 'Bolo com cobertura',
-      price: 'R$ 34,00',
+      price: 'R$ 36,00',
       image: '/bolobanana.jpg'
     },
     {
@@ -30,13 +30,13 @@ export default function HomePage() {
     {
       name: 'Bolo de Churros',
       description: 'Bolo com cobertura',
-      price: 'R$ 34,00',
+      price: 'R$ 36,00',
       image: '/bolochurros.jpg'
     },
     {
       name: 'Bolo de Ninho',
       description: 'Bolo com cobertura',
-      price: 'R$ 34,00',
+      price: 'R$ 36,00',
       image: '/boloninho.jpg'
     },
     {
@@ -53,32 +53,32 @@ export default function HomePage() {
     },
     {
       name: 'Bolo de Laranja',
-      description: 'Bolo de 150g',
-      price: 'R$ 32,00',
+      description: 'Bolo sem cobertura',
+      price: 'R$ 30,00',
       image: '/bololaranja.jpg'
     },
     {
       name: 'Bolo de Maçã',
       description: 'Bolo sem cobertura',
-      price: 'R$ 28,00',
+      price: 'R$ 30,00',
       image: '/bolomaca.jpg'
     },
     {
       name: 'Bolo de Iogurte',
       description: 'Bolo sem cobertura',
-      price: 'R$ 28,00',
+      price: 'R$ 30,00',
       image: '/boloiogurte.jpg'
     },
     {
       name: 'Bolo de Milho',
       description: 'Bolo sem cobertura',
-      price: 'R$ 28,00',
+      price: 'R$ 30,00',
       image: '/bolomilho.jpg'
     },
     {
       name: 'Bolo de Fubá',
       description: 'Bolo sem cobertura',
-      price: 'R$ 28,00',
+      price: 'R$ 30,00',
       image: '/bolofuba.jpg'
     },
     {

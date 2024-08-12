@@ -148,3 +148,21 @@ header {
 .add-button:hover {
   background-color: #5246e2; /* Cor de fundo ao passar o mouse */
 }
+
+.maintext {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
+.logowpp, .logoinsta {
+  margin-right: 8px;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './globals.css';
+import Tabs from './Tabs';
 
 export default function AddMenuItemForm({ onAdd }) {
   const [name, setName] = useState('');
