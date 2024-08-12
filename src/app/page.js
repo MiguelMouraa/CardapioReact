@@ -90,7 +90,7 @@ export default function HomePage() {
     {
       name: 'Bolo de Fubá com goiaba',
       description: 'Bolo sem cobertura',
-      price: 'R$ 30,00',
+      price: 'R$ 34,00',
       image: '/bolofubagoiaba.jpg'
     }
   ]);
