@@ -17,8 +17,8 @@ export default function HomePage() {
     },
     {
       name: 'Bolo de banana',
-      description: 'Bolo com cobertura',
-      price: 'R$ 36,00',
+      description: 'Bolo sem cobertura',
+      price: 'R$ 30,00',
       image: '/bolobanana.jpg'
     },
     {
