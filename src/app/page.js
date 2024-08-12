@@ -101,7 +101,7 @@ export default function HomePage() {
     const updatedMenuItems = menuItems.filter((_, i) => i !== index);
     setMenuItems(updatedMenuItems);
   };
-
+  
   const handleAddItem = (newItem) => {
     setMenuItems([...menuItems, newItem]);
   };
@@ -124,9 +124,6 @@ export default function HomePage() {
               />
             ))}
           </div>
-          <button onClick={() => router.push('/add-item')} className="add-button mt-8">
-            Adicionar Novo Item
-          </button>
         </div>
       </main>
     </>
