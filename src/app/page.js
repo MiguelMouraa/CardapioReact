@@ -40,13 +40,13 @@ export default function HomePage() {
       image: '/boloninho.jpg'
     },
     {
-      name: 'Bolo de Vulcão',
+      name: 'Bolo Vulcão',
       description: 'Bolo com cobertura',
       price: 'R$ 40,00',
       image: '/bolovulcao.jpg'
     },
     {
-      name: 'Bolo de Piscina',
+      name: 'Bolo Piscina',
       description: 'Bolo com cobertura',
       price: 'R$ 47,00',
       image: '/bolopiscina.jpg'
@@ -101,7 +101,7 @@ export default function HomePage() {
     const updatedMenuItems = menuItems.filter((_, i) => i !== index);
     setMenuItems(updatedMenuItems);
   };
-  
+
   const handleAddItem = (newItem) => {
     setMenuItems([...menuItems, newItem]);
   };
