@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Header from './Header';
 import MenuItem from './Menuitem';
 import './globals.css';
+import './buttons.css';
 
 // Dados iniciais dos itens do menu
 const initialMenuItems = {
@@ -136,15 +137,15 @@ export default function HomePage() {
       <main className="flex flex-col items-center justify-between p-8">
         <div className="max-w-5xl w-full text-center">
           <h2 className="text-2xl font-bold mb-8">Nosso Cardápio</h2>
-          <div className="mb-4">
+          <div className="mb-4 flex justify-center gap-4">
             <button
-              className={`px-4 py-2 ${activeTab === 'bolos' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+              className={`button ${activeTab === 'bolos' ? 'button-active' : 'button-inactive'}`}
               onClick={() => handleTabChange('bolos')}
             >
               Bolos
             </button>
             <button
-              className={`px-4 py-2 ${activeTab === 'tortas' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+              className={`button ${activeTab === 'tortas' ? 'button-active' : 'button-inactive'}`}
               onClick={() => handleTabChange('tortas')}
             >
               Tortas
