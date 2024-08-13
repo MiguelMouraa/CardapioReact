@@ -1,14 +1,13 @@
-// app/page.js
 "use client";
 
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';  // Importação para usar o roteamento
 import Header from './Header';
 import MenuItem from './Menuitem';
 import './globals.css';
 
-export default function HomePage() {
-  const [menuItems, setMenuItems] = useState([
+// Dados iniciais dos itens do menu
+const initialMenuItems = {
+  bolos: [
     {
       name: 'Bolo de cenoura com chocolate',
       description: 'Bolo com cobertura',
@@ -93,17 +92,42 @@ export default function HomePage() {
       price: 'R$ 34,00',
       image: '/bolofubagoiaba.jpg'
     }
-  ]);
+  ],
+  tortas: [
+    {
+      name: 'Torta de Frango',
+      description: '',
+      price: 'R$ 36,90',
+      image: '/tortadefrango.jpg'  
+    },
+    {
+      name: 'Torta de Frango com Palmito',
+      description: '',
+      price: 'R$ 36,90',
+      image: '/tortadefrango.jpg'  
+    },
+    {
+      name: 'Torta de Alho Poró',
+      description: '',
+      price: 'R$ 36,90',
+      image: '/tortadefrango.jpg'  
+    },
+    {
+      name: 'Torta de Palmito',
+      description: '',
+      price: 'R$ 39,90',
+      image: '/tortalimao.jpg'
+    }
+  ]
+};
 
-  const router = useRouter(); // Hook para roteamento
+export default function HomePage() {
+  const [activeTab, setActiveTab] = useState('bolos');
+  const [menuItems, setMenuItems] = useState(initialMenuItems.bolos);
 
-  const handleDeleteItem = (index) => {
-    const updatedMenuItems = menuItems.filter((_, i) => i !== index);
-    setMenuItems(updatedMenuItems);
-  };
-
-  const handleAddItem = (newItem) => {
-    setMenuItems([...menuItems, newItem]);
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+    setMenuItems(initialMenuItems[tab]);
   };
 
   return (
@@ -112,6 +136,20 @@ export default function HomePage() {
       <main className="flex flex-col items-center justify-between p-8">
         <div className="max-w-5xl w-full text-center">
           <h2 className="text-2xl font-bold mb-8">Nosso Cardápio</h2>
+          <div className="mb-4">
+            <button
+              className={`px-4 py-2 ${activeTab === 'bolos' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+              onClick={() => handleTabChange('bolos')}
+            >
+              Bolos
+            </button>
+            <button
+              className={`px-4 py-2 ${activeTab === 'tortas' ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
+              onClick={() => handleTabChange('tortas')}
+            >
+              Tortas
+            </button>
+          </div>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {menuItems.map((item, index) => (
               <MenuItem
@@ -120,7 +158,6 @@ export default function HomePage() {
                 description={item.description}
                 price={item.price}
                 image={item.image}
-                onDelete={() => handleDeleteItem(index)}
               />
             ))}
           </div>
