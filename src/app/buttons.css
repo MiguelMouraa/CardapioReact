@@ -6,19 +6,20 @@
     font-weight: 600;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
   }
   
   .button-active {
-    background-color: #3b82f6; /* Azul */
-    color: white;
+    background-color: #ece0b6; /* Azul */
+    color: #000000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .button-inactive {
-    background-color: #e5e7eb; /* Cinza claro */
+    background-color: #ebe0c0; /* Cinza claro */
     color: #374151; /* Cinza escuro */
   }
   
   .button-inactive:hover {
-    background-color: #d1d5db; /* Cinza mais escuro */
+    background-color: #f7ebc6; /* Cinza mais escuro */
   }

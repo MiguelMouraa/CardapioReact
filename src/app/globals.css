@@ -190,26 +190,3 @@ button:hover {
   background-color: #e5e7eb;
 }
 
-.button {
-  padding: 0.75rem 1.5rem;
-  border-radius: 1rem;
-  font-weight: 600;
-  border: none; /* Remove a borda padrão do botão */
-  cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.button-active {
-  background-color: #3b82f6; /* Azul */
-  color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.button-inactive {
-  background-color: #e5e7eb; /* Cinza claro */
-  color: #374151; /* Cinza escuro */
-}
-
-.button-inactive:hover {
-  background-color: #d1d5db; /* Cinza mais escuro */
-}

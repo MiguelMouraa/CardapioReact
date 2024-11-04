@@ -99,25 +99,25 @@ const initialMenuItems = {
       name: 'Torta de Frango',
       description: '',
       price: 'R$ 36,90',
-      image: '/tortadefrango.jpg'  
+      image: '/tortadefrango.jpeg'  
     },
     {
       name: 'Torta de Frango com Palmito',
       description: '',
       price: 'R$ 36,90',
-      image: '/tortadefrango.jpg'  
+      image: '/tortadefrangopalmito.jpeg'  
     },
     {
       name: 'Torta de Alho Poró',
       description: '',
       price: 'R$ 36,90',
-      image: '/tortadefrango.jpg'  
+      image: '/tortadealhoporo.jpeg'  
     },
     {
       name: 'Torta de Palmito',
       description: '',
       price: 'R$ 39,90',
-      image: '/tortalimao.jpg'
+      image: '/tortadepalmito.jpeg'
     }
   ]
 };
