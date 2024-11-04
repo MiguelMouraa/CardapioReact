@@ -118,7 +118,14 @@ const initialMenuItems = {
       description: '',
       price: 'R$ 39,90',
       image: '/tortadepalmito.jpeg'
+    },
+    {
+      name: 'Torta de Frango com catupiry',
+      description: '',
+      price: 'R$ 45,00',
+      image: '/tortadefrangocatupiry.jpeg'
     }
+    
   ]
 };
 
