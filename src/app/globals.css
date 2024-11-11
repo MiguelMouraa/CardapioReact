@@ -398,19 +398,21 @@ button:hover {
 /* Estilo para o botão "Ver Carrinho" */
 .view-cart-button {
   position: fixed;
-  top: 20px; /* Distância do topo da tela */
-  right: 20px; /* Distância da lateral direita */
-  background-color: #24d129; /* Cor do fundo */
-  color: white; /* Cor do texto */
-  padding: 10px 20px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  font-weight: bold; /* Peso da fonte */
-  border: none; /* Remove a borda */
-  border-radius: 8px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de pointer ao passar o mouse */
-  z-index: 1000; /* Garante que o botão fique sobre outros elementos */
-  transition: background-color 0.3s ease; /* Transição suave para a cor */
+  top: 20px;
+  right: 20px;
+  background-color: #73ff22;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .view-cart-button:hover {
   background-color: #5a52e0; /* Cor de fundo quando passar o mouse */
@@ -451,7 +453,7 @@ button:hover {
 .quantity-button:hover,
 .quantity-button:focus {
   background-color: transparent; /* Garante que o fundo continue transparente */
-  color: #6c63ff; /* Cor ao passar o mouse */
+  color: #9fcf93; /* Cor ao passar o mouse */
   outline: none; /* Remove a borda de foco */
   box-shadow: none; /* Remove qualquer sombra de foco */
 }
@@ -462,6 +464,22 @@ button:hover {
   color: #333;
   min-width: 20px; /* Largura mínima menor */
   text-align: center;
+}
+
+.cart-icon-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #84eb6a; /* Cor de fundo do botão */
+  color: white; /* Cor do ícone */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cart-icon-button:hover {
+  background-color: #acee85; 
 }
 
 

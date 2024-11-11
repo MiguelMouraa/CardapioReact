@@ -6,7 +6,6 @@ import MenuItem from './Menuitem';
 import './globals.css';
 import './buttons.css';
 
-// Dados iniciais dos itens do menu
 const initialMenuItems = {
   bolos: [
     { name: 'Bolo de cenoura com chocolate', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/bolocenoura.jpg' },
@@ -36,12 +35,10 @@ const initialMenuItems = {
 function Modal({ item, onClose, onAddToCart }) {
   const [quantity, setQuantity] = useState(1);
 
-  // Função para aumentar a quantidade
   const increaseQuantity = () => {
     setQuantity(prevQuantity => prevQuantity + 1);
   };
 
-  // Função para diminuir a quantidade
   const decreaseQuantity = () => {
     if (quantity > 1) {
       setQuantity(prevQuantity => prevQuantity - 1);
@@ -87,7 +84,7 @@ function CartModal({ cart, onClose, onPlaceOrder, onRemoveItem }) {
           ))
         )}
         <div className="cart-total">
-          <p>Total: {cart.reduce((acc, item) => acc + (parseFloat(item.price.replace('R$', '').replace(',', '.')) * item.quantity), 0).toFixed(2)}</p>
+          <p>Total: R$ {cart.reduce((acc, item) => acc + (parseFloat(item.price.replace('R$', '').replace(',', '.')) * item.quantity), 0).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</p>
         </div>
         <div className="cart-modal-buttons">
           <button onClick={onPlaceOrder} className="place-order-button">Efetuar Pedido</button>
@@ -121,12 +118,10 @@ export default function HomePage() {
   const handleAddToCart = (item, quantity) => {
     const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name);
     if (existingItemIndex >= 0) {
-      // Se o item já está no carrinho, aumenta a quantidade
       const updatedCart = [...cart];
       updatedCart[existingItemIndex].quantity += quantity;
       setCart(updatedCart);
     } else {
-      // Se o item não está no carrinho, adiciona com a quantidade selecionada
       setCart([...cart, { ...item, quantity }]);
     }
     closeModal();
@@ -184,10 +179,10 @@ export default function HomePage() {
             ))}
           </div>
           <button
-            className="view-cart-button"
+            className="view-cart-button cart-icon-button"
             onClick={() => setIsCartModalOpen(true)}
           >
-            Ver Carrinho
+            🛒
           </button>
         </div>
       </main>
