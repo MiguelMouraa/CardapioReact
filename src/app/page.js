@@ -8,20 +8,20 @@ import './buttons.css';
 
 const initialMenuItems = {
   bolos: [
-    { name: 'Bolo de cenoura com chocolate', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/bolocenoura.jpg' },
-    { name: 'Bolo de banana', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolobanana.jpg' },
-    { name: 'Bolo de Chocolate', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/bolochocolate.jpg' },
-    { name: 'Bolo de Churros', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/bolochurros.jpg' },
-    { name: 'Bolo de Ninho', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/boloninho.jpg' },
-    { name: 'Bolo Vulcão', description: 'Bolo com cobertura', price: 'R$ 40,00', image: '/bolovulcao.jpg' },
-    { name: 'Bolo Piscina', description: 'Bolo com cobertura', price: 'R$ 47,00', image: '/bolopiscina.jpg' },
-    { name: 'Bolo de Laranja', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bololaranja.jpg' },
-    { name: 'Bolo de Maçã', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolomaca.jpg' },
-    { name: 'Bolo de Iogurte', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/boloiogurte.jpg' },
-    { name: 'Bolo de Milho', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolomilho.jpg' },
-    { name: 'Bolo de Fubá', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolofuba.jpg' },
-    { name: 'Bolo de Mandioca', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolomandioca.webp' },
-    { name: 'Bolo de Fubá com goiaba', description: 'Bolo sem cobertura', price: 'R$ 34,00', image: '/bolofubagoiaba.jpg' }
+    { name: 'BOLO DE CENOURA COM CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/bolocenoura.jpg' },
+    { name: 'BOLO DE BANANA', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolobanana.jpg' },
+    { name: 'BOLO DE CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/bolochocolate.jpg' },
+    { name: 'BOLO DE CHURROS', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/bolochurros.jpg' },
+    { name: 'BOLO DE NINHO', description: 'Bolo com cobertura', price: 'R$ 36,00', image: '/boloninho.jpg' },
+    { name: 'BOLO VULCÃO', description: 'Bolo com cobertura', price: 'R$ 40,00', image: '/bolovulcao.jpg' },
+    { name: 'BOLO PISCINA', description: 'Bolo com cobertura', price: 'R$ 47,00', image: '/bolopiscina.jpg' },
+    { name: 'BOLO DE LARANJA', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bololaranja.jpg' },
+    { name: 'BOLO DE MAÇÃ', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolomaca.jpg' },
+    { name: 'BOLO DE IOGURTE', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/boloiogurte.jpg' },
+    { name: 'BOLO DE MILHO', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolomilho.jpg' },
+    { name: 'BOLO DE FUBÁ', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolofuba.jpg' },
+    { name: 'BOLO DE MANDIOCA', description: 'Bolo sem cobertura', price: 'R$ 30,00', image: '/bolomandioca.webp' },
+    { name: 'BOLO DE FUBÁ COM GOIABA', description: 'Bolo sem cobertura', price: 'R$ 34,00', image: '/bolofubagoiaba.jpg' }
   ],
   tortas: [
     { name: 'Torta de Frango', description: '', price: 'R$ 36,90', image: '/tortadefrango.jpeg' },
