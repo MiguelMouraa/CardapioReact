@@ -8,7 +8,7 @@ import './buttons.css';
 
 const initialMenuItems = {
   bolos: [
-    { name: 'BOLO DE CENOURA COM CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 37,90', image: '/bolocenoura.jpg' },
+    { name: 'BOLO DE CENOURA COM CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 40,90', image: '/bolocenoura.jpg' },
     { name: 'BOLO DE BANANA', description: 'Bolo sem cobertura', price: 'R$ 34,90', image: '/bolobanana.jpg' },
     { name: 'BOLO DE CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 40,90', image: '/bolochocolate.jpg' },
     { name: 'BOLO DE CHURROS', description: 'Bolo com cobertura', price: 'R$ 40,90', image: '/bolochurros.jpg' },
