@@ -1,39 +1,44 @@
 export default function Header() {
   return (
-    <header className="bg-gray-800 text-white py-4">
-      <div className="container mx-auto flex justify-between items-center">
-        
+    <header className="bg-[#f5e6a3] text-gray-800 py-6 shadow-sm rounded-[10px]">
+      <div className="container mx-auto flex flex-col items-center gap-4">
+
         <img
           src="/logo.png"
           alt="Bolos e Tortas da Fabi"
-          className="h-16"
+          style={{ width: "200px" }}
+          className="object-contain"
         />
 
-        <div className="header-links flex items-center space-x-6">
+        <div className="flex items-center gap-6">
           <a
             href="https://wa.me/5511985053701"
             target="_blank"
             rel="noopener noreferrer"
-            className="header-link flex items-center"
+            style={{ textDecoration: "none", color: "#333333" }}
+            className="flex items-center text-sm"
           >
             <img
               src="/logowpp.png"
               alt="WhatsApp Logo"
-              className="w-6 h-6 mr-2"
+              style={{ width: "20px" }}
+              className="mr-2"
             />
             (11) 98505-3701
           </a>
 
           <a
-            href="https://www.instagram.com/bolossdafabi?igsh=Y2dyYnM3emxidzAy"
+            href="https://www.instagram.com/bolossdafabi"
             target="_blank"
             rel="noopener noreferrer"
-            className="header-link flex items-center"
+            style={{ textDecoration: "none", color: "#333333" }}
+            className="flex items-center text-sm"
           >
             <img
               src="/logoinsta.png"
               alt="Instagram Logo"
-              className="w-6 h-6 mr-2"
+              style={{ width: "20px" }}
+              className="mr-2"
             />
             Instagram
           </a>
