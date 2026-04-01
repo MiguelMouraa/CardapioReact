@@ -9,7 +9,6 @@ import './buttons.css';
 const initialMenuItems = {
   bolos: [
     { name: 'BOLO DE CENOURA COM CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 37,90', image: '/bolocenoura.jpg' },
-<<<<<<< HEAD
     { name: 'BOLO DE BANANA', description: 'Bolo sem cobertura', price: 'R$ 34,90', image: '/bolobanana.jpg' },
     { name: 'BOLO DE CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 40,90', image: '/bolochocolate.jpg' },
     { name: 'BOLO DE CHURROS', description: 'Bolo com cobertura', price: 'R$ 40,90', image: '/bolochurros.jpg' },
@@ -30,8 +29,7 @@ const initialMenuItems = {
     { name: 'Torta de Alho Poró', description: '', price: 'R$ 38,90', image: '/tortadealhoporo.jpeg' },
     { name: 'Torta de Palmito', description: '', price: 'R$ 44,90', image: '/tortadepalmito.jpeg' },
     { name: 'Torta de Frango com Catupiry', description: '', price: 'R$ 49,90', image: '/tortadefrangocatupiry.jpeg' },
-    { name: 'Torta de Carne seca', description: '', price: 'R$ 49,90', image: '' }
-=======
+    { name: 'Torta de Carne seca', description: '', price: 'R$ 49,90', image: '' },
     { name: 'BOLO DE BANANA', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/bolobanana.jpg' },
     { name: 'BOLO DE CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 37,90', image: '/bolochocolate.jpg' },
     { name: 'BOLO DE CHURROS', description: 'Bolo com cobertura', price: 'R$ 37,90', image: '/bolochurros.jpg' },
@@ -51,8 +49,7 @@ const initialMenuItems = {
     { name: 'Torta de Frango com Palmito', description: '', price: 'R$ 38,90', image: '/tortadefrangopalmito.jpeg' },
     { name: 'Torta de Alho Poró', description: '', price: 'R$ 38,90', image: '/tortadealhoporo.jpeg' },
     { name: 'Torta de Palmito', description: '', price: 'R$ 41,90', image: '/tortadepalmito.jpeg' },
-    { name: 'Torta de Frango com Catupiry', description: '', price: 'R$ 46,90', image: '/tortadefrangocatupiry.jpeg' }
->>>>>>> 5d6b5fc3ead866ed7398702b3670154e6a4eb9db
+    { name: 'Torta de Frango com Catupiry', description: '', price: 'R$ 46,90', image: '/tortadefrangocatupiry.jpeg' },
   ]
 };
 
