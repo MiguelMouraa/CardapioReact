@@ -9,7 +9,7 @@ export default function Header() {
       className="logo"
     />
 
-        <div className="flex items-center gap-6">
+        <div className="header-links">
           <a
             href="https://wa.me/5511985053701"
             target="_blank"
