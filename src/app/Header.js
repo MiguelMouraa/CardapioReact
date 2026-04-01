@@ -1,14 +1,13 @@
 export default function Header() {
   return (
-    <header className="bg-[#f5e6a3] text-gray-800 py-6 shadow-sm rounded-[10px]">
-      <div className="container mx-auto flex flex-col items-center gap-4">
-
-        <img
-          src="/logo.png"
-          alt="Bolos e Tortas da Fabi"
-          style={{ width: "200px" }}
-          className="object-contain"
-        />
+    <header className="bg-[#f5e6a3] text-gray-800 py-6 shadow-sm">
+  <div className="header-container">
+    <img
+      src="/logo.png"
+      alt="Bolos e Tortas da Fabi"
+      style={{ width: "200px" }}
+      className="logo"
+    />
 
         <div className="flex items-center gap-6">
           <a
@@ -21,8 +20,7 @@ export default function Header() {
             <img
               src="/logowpp.png"
               alt="WhatsApp Logo"
-              style={{ width: "20px" }}
-              className="mr-2"
+              className="logowpp"
             />
             (11) 98505-3701
           </a>
@@ -37,8 +35,7 @@ export default function Header() {
             <img
               src="/logoinsta.png"
               alt="Instagram Logo"
-              style={{ width: "20px" }}
-              className="mr-2"
+              className="logoinsta"
             />
             Instagram
           </a>

@@ -29,27 +29,7 @@ const initialMenuItems = {
     { name: 'Torta de Alho Poró', description: '', price: 'R$ 38,90', image: '/tortadealhoporo.jpeg' },
     { name: 'Torta de Palmito', description: '', price: 'R$ 44,90', image: '/tortadepalmito.jpeg' },
     { name: 'Torta de Frango com Catupiry', description: '', price: 'R$ 49,90', image: '/tortadefrangocatupiry.jpeg' },
-    { name: 'Torta de Carne seca', description: '', price: 'R$ 49,90', image: '' },
-    { name: 'BOLO DE BANANA', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/bolobanana.jpg' },
-    { name: 'BOLO DE CHOCOLATE', description: 'Bolo com cobertura', price: 'R$ 37,90', image: '/bolochocolate.jpg' },
-    { name: 'BOLO DE CHURROS', description: 'Bolo com cobertura', price: 'R$ 37,90', image: '/bolochurros.jpg' },
-    { name: 'BOLO DE NINHO', description: 'Bolo com cobertura', price: 'R$ 37,90', image: '/boloninho.jpg' },
-    { name: 'BOLO VULCÃO', description: 'Bolo com cobertura', price: 'R$ 46,90', image: '/bolovulcao.jpg' },
-    { name: 'BOLO PISCINA', description: 'Bolo com cobertura', price: 'R$ 49,90', image: '/bolopiscina.jpg' },
-    { name: 'BOLO DE LARANJA', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/bololaranja.jpg' },
-    { name: 'BOLO DE MAÇÃ', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/bolomaca.jpg' },
-    { name: 'BOLO DE IOGURTE', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/boloiogurte.jpg' },
-    { name: 'BOLO DE MILHO', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/bolomilho.jpg' },
-    { name: 'BOLO DE FUBÁ', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/bolofuba.jpg' },
-    { name: 'BOLO DE MANDIOCA', description: 'Bolo sem cobertura', price: 'R$ 31,90', image: '/bolomandioca.webp' },
-    { name: 'BOLO DE FUBÁ COM GOIABA', description: 'Bolo sem cobertura', price: 'R$ 35,90', image: '/bolofubagoiaba.jpg' }
-  ],
-  tortas: [
-    { name: 'Torta de Frango', description: '', price: 'R$ 38,90', image: '/tortadefrango.jpeg' },
-    { name: 'Torta de Frango com Palmito', description: '', price: 'R$ 38,90', image: '/tortadefrangopalmito.jpeg' },
-    { name: 'Torta de Alho Poró', description: '', price: 'R$ 38,90', image: '/tortadealhoporo.jpeg' },
-    { name: 'Torta de Palmito', description: '', price: 'R$ 41,90', image: '/tortadepalmito.jpeg' },
-    { name: 'Torta de Frango com Catupiry', description: '', price: 'R$ 46,90', image: '/tortadefrangocatupiry.jpeg' },
+    { name: 'Torta de Carne Seca', description: '', price: 'R$ 49,90', image: '' },
   ]
 };
 
@@ -73,16 +53,27 @@ function Modal({ item, onClose, onAddToCart }) {
         <img src={item.image} alt={item.name} className="modal-image" />
         <p className="modal-description">{item.description}</p>
         <p className="modal-price">{item.price}</p>
-        
+
         <div className="quantity-selector">
           <button onClick={decreaseQuantity} className="quantity-button">-</button>
           <span className="quantity-display">{quantity}</span>
           <button onClick={increaseQuantity} className="quantity-button">+</button>
         </div>
-        
-        <div className="modal-buttons">
-          <button onClick={() => onAddToCart(item, quantity)} className="add-to-cart-button">Adicionar ao Carrinho</button>
-          <button onClick={onClose} className="modal-close-button">Fechar</button>
+
+        <div className="button-group">
+          <button
+            onClick={() => onAddToCart(item, quantity)}
+            className="add-to-cart-button"
+          >
+            Adicionar ao Carrinho
+          </button>
+
+          <button
+            onClick={onClose}
+            className="close-button"
+          >
+            Fechar
+          </button>
         </div>
       </div>
     </div>
