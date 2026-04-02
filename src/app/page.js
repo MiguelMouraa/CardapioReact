@@ -29,7 +29,8 @@ const initialMenuItems = {
     { name: 'Torta de Alho Poró', description: '', price: 'R$ 38,90', image: '/tortadealhoporo.jpeg' },
     { name: 'Torta de Palmito', description: '', price: 'R$ 44,90', image: '/tortadepalmito.jpeg' },
     { name: 'Torta de Frango com Catupiry', description: '', price: 'R$ 49,90', image: '/tortadefrangocatupiry.jpeg' },
-    { name: 'Torta de Carne Seca', description: '', price: 'R$ 49,90', image: '' },
+    { name: 'Torta de Carne Seca', description: '', price: 'R$ 55,90', image: '/carneseca.webp' },
+    { name: 'Torta de Carne Seca com Catupiry', description: '', price: 'R$ 62,90', image: '/carnesecacatupiry.webp' },
   ]
 };
 
